@@ -1,0 +1,7 @@
+<h2>Dashboard</h2>
+<div *ngFor="let message of messages">
+    <p>{{message}}</p>
+    <button type="button" (click)="edit(message)" class="btn btn-default">Edit</button>
+    <button type="button" (click)="delete(message)" class="btn btn-default">Delete</button>
+</div>
+<button type="button" (click)="add()" class="btn btn-primary">Add</button>
